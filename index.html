@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>作业</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script>
+	 // DOM ready
+	 $(function() {
+	   
+      // Create the dropdown base
+      $("<select />").appendTo("nav");
+      
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Select a page"
+      }).appendTo("nav select");
+      
+      // Populate dropdown with menu items
+      $("nav a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo("nav select");
+      });
+      
+	   // To make dropdown actually work
+      $("nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+	 
+	 });
+	</script>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+    	<div class="logo">
+            <h1><a href="">初代吸血鬼 <span>The Originals</span></a></h1>
+            <div class="slogan">个人制作影视主页——by noodle-xia ✌✌✌</div>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="">首页</a></li>
+                <li><a href="02.html">角色</a></li>
+                <li><a href="04.html">初代Ⅱ</a></li>
+                <li><a href="03.html">更多影视</a></li>
+            </ul>
+        </nav>
+        <div class="clearfloat"></div>
+        <hr>
+    </header>
+    <div class="contentBody">
+    	<div class="welcome">
+            <h2>剧情简介</h2>
+            <div class="floatLeft"><img src="images/xue1.jpg" alt="pic1"></div>
+            <div class="description">
+                <p>
+                    《初代吸血鬼（The Originals）》是《吸血鬼日记》的衍生剧，由哥伦比亚及华纳兄弟联合电视网出品。由Chris Grisme任导演， 约瑟夫·摩根，丹尼尔·吉里斯主演。该剧讲述了初代吸血鬼的家族成员尼克劳斯、以利亚和丽贝卡三兄妹返回新奥尔良定居后，并与其之前的门徒马赛尔开始统治权争夺和地区女巫斗争的惊险故事。该剧于2013年10月3日首播。 <a href="http://v.qq.com/x/page/z0021jelp5h.html?ptag=baidu.baike.tv">在线观看</a> 尼克劳斯（吸血鬼始祖与狼人的混血）在新奥尔良回到他的过去， 得到一个对他正在酝酿阴谋的神秘提示下， 尼克劳斯回到了那个他和他家人帮助建立起的美国南方大城，新奥尔良（New Orleans）。 <strong>尼克劳斯</strong> 的疑惑导致了他和他前门徒马赛尔的团聚， 马赛尔是一个对新奥尔良所有人类与超自然生物有着绝对控制权的魅力吸血鬼。以利亚（吸血鬼始祖，尼克劳斯的哥哥）决心想要帮助他的弟弟尼克劳斯找到救赎， 他追随着尼克劳斯并很快发现海莉（狼人）也来到了这个法国区寻找她家族历史的线索但是她落在了一个强大的女巫苏菲手上。. <br><br>
+                    The Originals <strong>第1集</strong>,  Klaus， 第一个狼人-吸血鬼的混血儿， 回到了新奥尔良法语区这个超自然生物的大熔炉--这个他和他的家人在三百年前帮助建立的城市。 <a href="http://baike.baidu.com/link?url=q7cUd3IKzL8FSr6Trn8XGZn5rlZrJ_YV3hK4u8WZbLSYlmHCEKxr3-qNWebXHiPNBu4z63m3U1yu6u06aDx8O42UMuLTYapa-p4vBA7YSP7SiappVFO8y7t4mrlFewYI23mVXIkmhwomWbr5hPl2dK#%E5%88%86%E9%9B%86%E5%89%A7%E6%83%85">在线观看</a>  Elijah为了帮助他的弟弟， 决定把他的妹妹Rebekah留下并追随Klaus。 Elijah得知Klaus之前的一夜情对象， 美丽又叛逆的Hayley， 陷入了一个能力强大的女巫Sophie Deveraux手中。 当Sophie揭示了一些消息的时候， Elijah意识到始祖家族有了第二个人性和赎罪的机会。 然而Klaus， 更加好奇的是他与他以前门徒Marcel的意外重逢。
+                </p>
+                <p class="button"><a href="http://baike.baidu.com/link?url=q7cUd3IKzL8FSr6Trn8XGZn5rlZrJ_YV3hK4u8WZbLSYlmHCEKxr3-qNWebXHiPNBu4z63m3U1yu6u06aDx8O42UMuLTYapa-p4vBA7YSP7SiappVFO8y7t4mrlFewYI23mVXIkmhwomWbr5hPl2dK#%E5%88%86%E9%9B%86%E5%89%A7%E6%83%85">Read more...</a></p>
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+        <div class="clearfloat"></div>
+        <hr>
+        <div class="boxes">
+            <div class="box">
+                <img src="images/xue2.jpg" alt="pic2">
+                <h3>尼克劳斯 </h3>
+                <p>
+                    Klaus是吸血鬼的祖先之一，拥有狼人和吸血鬼双重血统。Klaus与其他的兄弟姐妹为同母异父，当年Esther与狼人生下了Klaus这个私生子。因此klaus从小就不受到父亲Michal的喜爱，他和Elija兄弟间比划剑法都要被Michael看不顺眼大声斥责。后来Michal为了能让自己的家族不再害怕狼人，让身为女巫的妻子施咒，把自己以及自己的孩子全部变成了吸血鬼，他们是最早的吸血鬼，即吸血鬼祖先。
+                </p>
+                <p class="button"><a href="">Details</a></p>
+            </div>
+            <div class="box">
+                <img src="images/xue3.jpg" alt="pic3">
+                <h3>以利亚 </h3>
+                <p>
+                    Elijah同为最古老的吸血鬼祖先之一，是klaus的兄弟。他极为守信，只要得到了他的承诺，他就一定信守诺言。他曾与凯瑟琳多次合作，但是凯瑟琳却一次一次地背叛他。家庭对于他来说是最重要的一样东西，因此他极力的去维护兄弟姐妹之间的情谊，同时也希望自己的兄弟Klaus能得到救赎，虽然Klaus常常做出让他烦心的事但他还是依然守在他的身边。
+                </p>
+                <p class="button"><a href="">Details</a></p>
+            </div>
+            <div class="box lastBox">
+                <img src="images/xue4.jpg" alt="pic4">
+                <h3>海莉 </h3>
+                <p>
+                    Hayley为了寻找抛弃她的家人们，探寻自己的身世之谜，一直帮助Shane办事。在探寻的过程中，结识了狼人Tyler，并帮助Tyler解除认宗。后来，随着Tyler来到神秘瀑布镇。在一次偶然的情况中，与Klaus发生了关系，但随后就离去，直到在试播集中才出现，并被女巫发现她的肚子里有了baby，孩子正是Klaus的。
+                </p>
+                <p class="button"><a href="">Details</a></p>
+            </div>
+            <div class="clearfloat"></div>
+        </div>
+    </div>
+    <div class="sidebar">
+    	<div class="sidebarBox">
+        	<h2>音乐原声</h2>
+            <ul>
+            	<li><a href="http://baike.baidu.com/item/Love%20Is%20Free">《Love Is Free》</a></li>
+                <li><a href="http://baike.baidu.com/item/Beautiful%20People">《Beautiful People》</a></li>
+                <li><a href="">《Second Chance》</a></li>
+                <li><a href="">《Mercy》</a></li>
+                <li><a href="">《Blind Heart》</a></li>
+                <li><a href="">《Afterlife》</a></li>
+            </ul>
+        </div>
+        <div class="sidebarBox">
+        	<h2>参考资料</h2>
+            <ul>
+            	<li><a href="http://baike.baidu.com/redirect/f89cbVMQt8DJkPvULoaAGy56KQ8hMmNBk4AYCaT6rtcBotBhfd0ya--KlxQiB7JkzstaKWBcQUAg_PqNIPBOT7dEJn0HEbhFclOSyLIXQJY8t3PONQGBv8W_DA">全新魔幻剧《初代吸血鬼》</a></li>
+                <li><a href="http://baike.baidu.com/redirect/eee0wEim0Pm6TRcwx_wBrIRYjMhDezevetYyfa0VXcgoaRgfiXh-jSGF2V7DvfLZEdlPH0IoaNGHu1Z4u-fTsp_RWDasj2go9L05ku__Za4">初代吸血鬼第1季剧情介绍</a></li>
+                <li><a href="">《初代吸血鬼》来袭 打造成人版“吸血鬼日记”</a></li>
+                <li><a href="">《吸血鬼5》迷雾重重 《初代》首播错综复杂</a></li>
+                <li><a href="">《初代吸血鬼》遭侃：我哥虐我千百遍 我待我哥如初恋 </a></li>
+                <li><a href="">《初代吸血鬼》经典台词</a></li>
+            </ul>
+        </div>
+        <div class="sidebarBox lastSidebarBox">
+        	<h2>词条标签</h2>
+            <ul>
+            	<li><a href="http://baike.baidu.com/wikitag/taglist?tagId=35986">剧情剧</a></li>
+                <li><a href="http://baike.baidu.com/wikitag/taglist?tagId=35985">恐怖剧</a></li>
+                <li><a href=""> 科幻剧</a></li>
+                <li><a href=""> 爱情剧</a></li>
+                <li><a href="">电视剧作品</a></li>
+                <li><a href=""> 娱乐作品</a></li>
+            </ul>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+    <div class="clearfloat"></div>
+    <footer>
+        <div class="icons">
+            <ul>
+                <li><a href=""><img src="images/facebook.png" alt="facebook icon"></a></li>
+                <li><a href=""><img src="images/twitter.png" alt="twitter icon"></a></li>
+                <li><a href=""><img src="images/zhihu.png" alt="google plus icon"></a></li>
+                <li><a href=""><img src="images/weibo.png" alt="dribble icon"></a></li>
+            </ul> 
+        </div>
+  <p>
+            Copyright &copy; <a href="#">2017</a> |  By <a href="" title="">noodle-xia</a>
+        </p>
+    </footer>
+    <script src="js/jquery-3.1.1.min.js"></script>
+</div>
+</body>
+</html>
